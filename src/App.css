@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f5fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.visitenkarte {
+    background-color: white;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    margin: 20px;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+}
+
+    .visitenkarte:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+    }
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+    header h1 {
+        margin: 0;
+        font-size: 2.8rem;
+        color: #1e3a8a;
+        font-weight: 600;
+    }
+
+.titel {
+    color: #666;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.kontakt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px 0;
+    gap: 20px;
+}
+
+.kontakt-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+    .kontakt-item:hover {
+        background: rgba(102, 126, 234, 0.2);
+        transform: scale(1.05);
+    }
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.skill {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+    .skill:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+.ueber-mich {
+    background: rgba(102, 126, 234, 0.05);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 30px 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+    .social-links a {
+        color: #1e3a8a;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 2px solid #1e3a8a;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+    }
+
+        .social-links a:hover {
+            background-color: #1e3a8a;
+            color: white;
+            border-color: transparent;
+        }
+
+@media (max-width: 600px) {
+    .visitenkarte {
+        padding: 25px;
+        margin: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .kontakt {
+        flex-direction: column;
+    }
+
+    .kontakt-item {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.portfolio-section {
+  text-align: center;
+  margin: 40px 0;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+}
+
+.portfolio-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #1e3a8a;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(30, 58, 138, 0.2);
+}
+
+.portfolio-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(30, 58, 138, 0.3);
+}
+
+.arrow {
+  display: inline-block;
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-button:hover .arrow {
+  transform: translateX(5px);
+}
